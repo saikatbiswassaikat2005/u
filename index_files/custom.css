@@ -1,0 +1,124 @@
+/* Intel Vault - Intel Tools Custom */
+
+.iv {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.iv h1 {
+  font-size: 36px;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.iv p {
+  margin-bottom: 15px;
+}
+
+.iv h2 {
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.iv .image {
+  width: 100%; 
+  /* max-height: 160px;  */
+  overflow: hidden; 
+  margin-bottom: 15px;
+}
+
+.iv .image img {
+  position: relative;
+  transition: all .3s ease-in-out;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.iv .subsection {
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.iv .subsection a.title {
+  font-family: Oswald, 'Franklin Gothic Medium Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
+  display: block;
+}
+
+.iv .subsection a.title:last-of-type {
+  border-bottom: none;
+  padding: 30px 0 0 0;
+}
+
+.iv .subsection .icon-ext-link {
+  display: none;
+}
+
+.iv .subsection a.title .image {
+  transition: all .3s ease-in-out;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+}
+
+.iv .subsection a.title:hover .image {
+  display: block;
+  opacity: 1;
+  height: auto;
+  margin-top: 10px;
+}
+
+.iv .item:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.iv .item .image {
+  border: 1px solid #ccc;
+}
+
+.iv .item .image img {
+  border: none;
+}
+
+
+.iv .item p {
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.iv .item .source {
+  font-family: Oswald, 'Franklin Gothic Medium Condensed', sans-serif;
+  color: #4E6E79;
+  margin-bottom: 60px;
+}
+
+.iv .item .source a:link
+.iv .item .source a:hover {
+  color: #4E6E79;
+}
+
+.iv .item .source span {
+  text-transform: lowercase;
+  font-weight: 300;
+}
+
+/* fisa footer menu hide */
+footer .link-section:has(a[href='/foreign-intelligence-surveillance-act']) {
+	display: none;
+}
+
+footer .col-md-1:has(.link-section a[href='/foreign-intelligence-surveillance-act']) {
+	display: none;
+}
