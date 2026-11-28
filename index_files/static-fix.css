@@ -1,0 +1,68 @@
+/* 29.09.26 Kartheek, removed the tablet related fixes for 2783694, this is still in prod, removing from stage because we have a code fix present */
+/* 24.09.26 Kartheek- removed Static fixes for 2926362, this is still in prod, removing from stage because we have a code fix present */
+/* 08.08.26 Kartheek - updated media query for parallax image fix, part of 2783694 */
+/* 29.07.26 Kartheek - removing the static fix changes added as part of 1955402, which is breaking the current bug 2506437  */
+
+/* Hide office promo on Global office location page */
+.global-office-locations-page .cmp-offices-details-promo--variant{
+	display: none;
+}
+/* Hide office promo on Global office location page ends */
+
+
+/* fix for 1756562 global site locator icon */
+.cmp-header__location-selector .icon-global:before{
+	content: "\e80f" !important;
+}
+
+/* fix for 1757347 */
+.cmp-share-bar__save-left .cmp-share-bar__links:hover {
+    text-decoration: none;
+}
+/* fix for 1757347 ends*/
+
+/* fix for 1766941 */
+@media screen and (min-width: 1024px){
+    .cmp-tabs-v2--fixed-size-description-and-border .cmp-tabs__tablist{
+        width: 100% !important;
+        max-width: initial !important;
+    }
+}
+/* fix for 1793790 */
+@media screen and (max-width:1200px) {
+    .cmp-tabs-v2--fixed-size-description-and-border .cmp-tabs__tablist{
+        width: 100% !important;
+    }
+}
+
+/* pending fix for 1696144 */
+.cmp-promo__services .cmp-promo__content__desc,
+.cmp-promo__services .cmp-promo__content__title {
+    color: #000;
+}
+
+/* Fix IOC page scrolling issue on mobile */
+.custom--ioc-link-list.cmp-link-list-v3.fixed {
+    position: relative !important;
+    top: unset !important;
+    transition: unset !important;
+}
+
+
+/* Fix for 1975015 */
+.cmp-modal-vertical-layout .cmp-modal__container img:not(.cmp-co-branding-img) {
+    aspect-ratio: auto!important;
+}
+/* Fix for 1975015 ends */
+
+/* Fix for 1975026 */
+.cmp-container__parallax .cmp-container__row>div:nth-child(2){
+    z-index: 1;
+}
+/* Fix for 1975026 ends */
+
+/*Fix for User Story 2744300: POC | APAC | Allow soft-hyphen for long words*/
+:lang(zh-tw), :lang(zh-cn) {
+    word-break: normal !important;
+}
+/*Fix for User Story 2744300: POC | APAC | Allow soft-hyphen for long words ends*/

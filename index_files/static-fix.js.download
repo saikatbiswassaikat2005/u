@@ -1,0 +1,20 @@
+$(document).ready(function () {
+  var currentUrl = window.location.href;
+  var governanceLetterPath =
+    "/en/about/governance/global-impact-report/global-report-letter-from-global-ceo-chair";
+
+  if (currentUrl.indexOf(governanceLetterPath) !== -1) {
+    $(".cmp-list-image-v2--column .title-v2.font-size__xs").css({
+      margin: "0",
+      display: "contents",
+    });
+    $(".cmp-list-image-v2--column .title-v2.font-size__xs .cmp-title__text").css(
+      "font-weight",
+      "600"
+    );
+  }
+});
+
+// VA 10/16 3011288 Fix for lazy-loaded components in main content area on Operate & Managed Services pages
+!function(){"use strict";const t=["/global/en/what-we-do/capabilities/operate.html","/middle-east/en/what-we-do/capabilities/operate.html","/us/en/services/consulting/services/managed-services.html","/uk/en/what-we-do/capabilities/operate.html"];if(!t.includes(window.location.pathname))return;const e=()=>{const t=document.querySelectorAll('[data-component*="tabs"].no-show,.cmp-tabs.no-show,.cmp-tabs-v2 .cmp-tabs.no-show'),e=document.querySelectorAll('[data-component*="list-image"].no-show'),o=document.querySelectorAll('[data-component*="promo"].no-show,.promocontainerv2.no-show'),n=document.querySelectorAll('[data-component*="interactive-container"].no-show,.cmp-interactive-container.no-show'),c=document.querySelectorAll('[data-component*="cta"].no-show,.cmp-cta.no-show'),s=document.querySelectorAll('[data-component*="carousel-scrollbar"].no-show'),a=document.querySelectorAll('[data-component*="mosaic-grid"].no-show,.cmp-mosaic-grid.no-show'),r=document.querySelectorAll('[data-component*="video"].no-show,.cmp-video.no-show'),i=document.querySelectorAll('[data-component*="profile-promo"].no-show'),l=document.querySelectorAll('[data-component*="accordion"].no-show,.cmp-accordion.no-show'),m=document.querySelectorAll(".cmp-tabs__tabpanel .no-show"),d=document.querySelectorAll(".cmp-interactive-container .no-show"),u=document.querySelectorAll(".cmp-mosaic-grid .no-show");[...t,...e,...o,...n,...c,...s,...a,...r,...i,...l,...m,...d,...u].forEach(t=>{t.classList.remove("no-show"),t.style.opacity="1",t.style.visibility="visible"})};e(),"loading"===document.readyState&&document.addEventListener("DOMContentLoaded",e),setTimeout(e,100),setTimeout(e,300),setTimeout(e,600),setTimeout(e,1e3)}();
+
